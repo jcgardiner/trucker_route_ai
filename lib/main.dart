@@ -25,9 +25,20 @@ class TruckerRouteAIApp extends StatelessWidget {
           foregroundColor: Colors.white,
           elevation: 0,
         ),
+        cardTheme: CardThemeData(
+          elevation: 2,
+          margin: const EdgeInsets.symmetric(vertical: 4),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue[800],
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+          ),
+        ),
       ),
       home: const HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
-}
+} 
